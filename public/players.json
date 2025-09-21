@@ -1,0 +1,134 @@
+[
+  {
+    "id": "1",
+    "image": "https://i.ibb.co.com/KpmTNdgG/mahamudullah.jpg",
+    "name": "Mahmudullah Riyad",
+    "country": "Bangladesh",
+    "role": "All-rounder",
+    "batting": "Right-handed",
+    "bowling": "Right-arm off-break",
+    "price": "12000000",
+    "rating": 4.5
+  },
+  {
+    "id": "2",
+    "image": "https://i.ibb.co.com/tTbbkCyq/sakibalhasan.jpg",
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "role": "All-rounder",
+    "batting": "Left-handed",
+    "bowling": "Left-arm orthodox",
+    "price": "25000000",
+    "rating": 4.8
+  },
+  {
+    "id": "3",
+    "image": "https://i.ibb.co.com/whFX10zq/tamim-Iqbal.png",
+    "name": "Tamim Iqbal",
+    "country": "Bangladesh",
+    "role": "Batsman",
+    "batting": "Left-handed",
+    "bowling": "N/A",
+    "price": "18000000",
+    "rating": 4.6
+  },
+  {
+    "id": "4",
+    "image": "https://i.ibb.co.com/Ld8j3gY8/mushi.jpg",
+    "name": "Mushfiqur Rahim",
+    "country": "Bangladesh",
+    "role": "Wicketkeeper Batsman",
+    "batting": "Right-handed",
+    "bowling": "N/A",
+    "price": "15000000",
+    "rating": 4.4
+  },
+  {
+    "id": "5",
+    "image": "https://i.ibb.co.com/LDR2wL5W/mash.png",
+    "name": "Mashrafe Mortaza",
+    "country": "Bangladesh",
+    "role": "Bowler",
+    "batting": "Right-handed",
+    "bowling": "Right-arm fast-medium",
+    "price": "9000000",
+    "rating": 4.2
+  },
+  {
+    "id": "6",
+    "image": "https://i.ibb.co.com/zHm1PbR0/andre-Rassell.jpg",
+    "name": "Andre Russell",
+    "country": "West Indies",
+    "role": "All-rounder",
+    "batting": "Right-handed",
+    "bowling": "Right-arm fast",
+    "price": "150000",
+    "rating": 4.7
+  },
+  {
+    "id": "7",
+    "image": "https://i.ibb.co.com/93VmNJc3/sunil-Narine.webp",
+    "name": "Sunil Narine",
+    "country": "West Indies",
+    "role": "All-rounder",
+    "batting": "Left-handed",
+    "bowling": "Right-arm off-break",
+    "price": "120000",
+    "rating": 4.3
+  },
+  {
+    "id": "8",
+    "image": "https://i.ibb.co.com/jP5vzKHD/malan.jpg",
+    "name": "Dawid Malan",
+    "country": "England",
+    "role": "Batsman",
+    "batting": "Left-handed",
+    "bowling": "Right-arm leg-break",
+    "price": "80000",
+    "rating": 4.5
+  },
+  {
+    "id": "9",
+    "image": "https://i.ibb.co.com/N2dWT3K5/fakhar-Zaman.png",
+    "name": "Fakhar Zaman",
+    "country": "Pakistan",
+    "role": "Batsman",
+    "batting": "Left-handed",
+    "bowling": "Left-arm orthodox",
+    "price": "95000",
+    "rating": 4.4
+  },
+  {
+    "id": "10",
+    "image": "https://i.ibb.co.com/KcgM6ygP/mujib.jpg",
+    "name": "Mujeeb Ur Rahman",
+    "country": "Afghanistan",
+    "role": "Bowler",
+    "batting": "Right-handed",
+    "bowling": "Right-arm off-break",
+    "price": "70000",
+    "rating": 4.1
+  },
+  {
+    "id": "11",
+    "image": "https://i.ibb.co.com/60fsM6QH/TBolt.png",
+    "name": "Trent Boult",
+    "country": "New Zealand",
+    "role": "Bowler",
+    "batting": "Right-handed",
+    "bowling": "Left-arm fast-medium",
+    "price": "100000",
+    "rating": 4.6
+  },
+  {
+    "id": "12",
+    "image": "https://i.ibb.co.com/nsHv1Qfz/dussen.jpg",
+    "name": "Rassie van der Dussen",
+    "country": "South Africa",
+    "role": "Batsman",
+    "batting": "Right-handed",
+    "bowling": "Leg-break",
+    "price": "65000",
+    "rating": 4.2
+  }
+]
