@@ -1,21 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import userImg from "../../assets/user1.png"
 import flagImg from "../../assets/report1.png"
 
-const AvailablePlayersCard = ({player}) => {
-   const {image,name,country,role,rating,bowling,batting,price} = player
+const AvailablePlayersCard = ({ player, handleCoin, coin, handleSelectedPlayers, selectedPlayers }) => {
+    const { image, name, country, role, rating, bowling, batting, price } = player;
+    const [choosePlayer, setChoosePlayer] = useState(false)
+    const handleChoosePlayer = () => {
+        if (selectedPlayers.length >= 6) {
+            alert("You can Choose only Six Players")
+            return
+        }
+        if (price > coin) {
+            alert("you don't have enough coin");
+            return
+        }
+        setChoosePlayer(true)
+        handleCoin(price)
+        handleSelectedPlayers(player)
+    }
     return (
         <div className="card bg-white text-black shadow-sm p-3 space-y-3">
             <figure className='min-h-80 mx-auto'>
                 <img
-                className='h-80 object-cover'
+                    className='h-80 object-cover'
                     src={image}
                     alt="player image" />
             </figure>
             <div className="space-y-3 h-[200px] flex-shrink-0 overflow-hidden">
                 <h2 className="card-title">
                     <img src={userImg} alt="" />
-                   {name}
+                    {name}
                 </h2>
                 <div className='flex justify-between items-center'>
                     <div className='flex gap-1 items-center'>
@@ -35,7 +49,7 @@ const AvailablePlayersCard = ({player}) => {
                     <div className='flex gap-1 items-center'>
                         <p className='font-semibold'>Price: ${price}</p>
                     </div>
-                   <button className='btn'>Choose Player</button>
+                    <button disabled={choosePlayer} onClick={handleChoosePlayer} className={`btn ${choosePlayer ? 'text-green-400' : ""}`}>{choosePlayer ? "Selected" : "Choose Player"}</button>
                 </div>
             </div>
         </div>

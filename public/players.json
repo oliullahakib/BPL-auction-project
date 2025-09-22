@@ -7,7 +7,7 @@
     "role": "All-rounder",
     "batting": "Right-handed",
     "bowling": "Right-arm off-break",
-    "price": "12000000",
+    "price": 12000000,
     "rating": 4.5
   },
   {
@@ -18,7 +18,7 @@
     "role": "All-rounder",
     "batting": "Left-handed",
     "bowling": "Left-arm orthodox",
-    "price": "25000000",
+    "price": 25000000,
     "rating": 4.8
   },
   {
@@ -29,7 +29,7 @@
     "role": "Batsman",
     "batting": "Left-handed",
     "bowling": "N/A",
-    "price": "18000000",
+    "price": 18000000,
     "rating": 4.6
   },
   {
@@ -40,7 +40,7 @@
     "role": "Wicketkeeper Batsman",
     "batting": "Right-handed",
     "bowling": "N/A",
-    "price": "15000000",
+    "price": 15000000,
     "rating": 4.4
   },
   {
@@ -51,7 +51,7 @@
     "role": "Bowler",
     "batting": "Right-handed",
     "bowling": "Right-arm fast-medium",
-    "price": "9000000",
+    "price": 9000000,
     "rating": 4.2
   },
   {
@@ -62,7 +62,7 @@
     "role": "All-rounder",
     "batting": "Right-handed",
     "bowling": "Right-arm fast",
-    "price": "150000",
+    "price": 150000,
     "rating": 4.7
   },
   {
@@ -73,7 +73,7 @@
     "role": "All-rounder",
     "batting": "Left-handed",
     "bowling": "Right-arm off-break",
-    "price": "120000",
+    "price": 120000,
     "rating": 4.3
   },
   {
@@ -84,7 +84,7 @@
     "role": "Batsman",
     "batting": "Left-handed",
     "bowling": "Right-arm leg-break",
-    "price": "80000",
+    "price": 80000,
     "rating": 4.5
   },
   {
@@ -95,7 +95,7 @@
     "role": "Batsman",
     "batting": "Left-handed",
     "bowling": "Left-arm orthodox",
-    "price": "95000",
+    "price": 95000,
     "rating": 4.4
   },
   {
@@ -106,7 +106,7 @@
     "role": "Bowler",
     "batting": "Right-handed",
     "bowling": "Right-arm off-break",
-    "price": "70000",
+    "price": 70000,
     "rating": 4.1
   },
   {
@@ -117,7 +117,7 @@
     "role": "Bowler",
     "batting": "Right-handed",
     "bowling": "Left-arm fast-medium",
-    "price": "100000",
+    "price": 100000,
     "rating": 4.6
   },
   {
@@ -128,7 +128,7 @@
     "role": "Batsman",
     "batting": "Right-handed",
     "bowling": "Leg-break",
-    "price": "65000",
+    "price": 65000,
     "rating": 4.2
   }
 ]

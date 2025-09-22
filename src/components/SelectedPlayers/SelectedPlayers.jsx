@@ -1,10 +1,14 @@
 import React from 'react';
+import SelectedPlayersCard from './SelectedPlayersCard';
 
-const SelectedPlayers = () => {
+const SelectedPlayers = ({selectedPlayers,handleDelete}) => {
+    console.log(selectedPlayers)
     return (
-        <div>
-           <h1>I am Selected</h1> 
-        </div>
+        selectedPlayers.map(player =><SelectedPlayersCard 
+            key={player.id} 
+            player ={player} 
+            handleDelete={handleDelete}
+            />)
     );
 };
 

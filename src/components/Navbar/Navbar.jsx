@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Navbar() {
+function Navbar({coin}) {
     return (
         <div className="navbar container mx-auto mt-5">
             <div className="navbar-start">
@@ -32,7 +32,7 @@ function Navbar() {
                     <li><a href="">Teams</a></li>
                     <li><a href="">Schedules</a></li>
                 </ul>
-                <a className="btn">0 Coin <img src="https://i.ibb.co.com/DH5KkSQH/dollar1.png" alt="coin image" /></a>
+                <a className="btn">{coin} Coin <img src="https://i.ibb.co.com/DH5KkSQH/dollar1.png" alt="coin image" /></a>
             </div>
         </div>
     );
