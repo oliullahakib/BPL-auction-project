@@ -6,13 +6,13 @@ const AvailablePlayersCard = ({player}) => {
    const {image,name,country,role,rating,bowling,batting,price} = player
     return (
         <div className="card bg-white text-black shadow-sm p-3 space-y-3">
-            <figure>
+            <figure className='min-h-80 mx-auto'>
                 <img
-                className='w-80'
+                className='h-80 object-cover'
                     src={image}
                     alt="player image" />
             </figure>
-            <div className="space-y-3">
+            <div className="space-y-3 h-[200px] flex-shrink-0 overflow-hidden">
                 <h2 className="card-title">
                     <img src={userImg} alt="" />
                    {name}

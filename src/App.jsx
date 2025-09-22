@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import './App.css'
 import AvailablePlayers from './components/AvailablePlayers/AvailablePlayers'
 import Banner from './components/Banner/Banner'
@@ -20,7 +21,9 @@ function App() {
         <button className='p-2 border border-gray-300 border-l-0 rounded-r-xl'>Selected(0)</button>
       </div>
      </div>
-     <AvailablePlayers playersPromiss={playersPromiss} />
+    <Suspense fallback ={<div className='flex justify-center items-center'><span className="loading loading-spinner w-20 "></span></div>}>
+       <AvailablePlayers playersPromiss={playersPromiss} />
+    </Suspense>
      {/* <SelectedPlayers/> */}
     </>
   )
