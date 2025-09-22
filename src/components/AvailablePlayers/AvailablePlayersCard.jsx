@@ -1,16 +1,18 @@
 import userImg from "../../assets/user1.png"
 import flagImg from "../../assets/report1.png"
+import { toast } from "react-toastify";
 
 const AvailablePlayersCard = ({ player, handleCoin, coin, handleSelectedPlayers, selectedPlayers }) => {
     const { image, name, country, role, rating, bowling, batting, price } = player;
     const isSelected = selectedPlayers.some(p => p.id === player.id);
     const handleChoosePlayer = () => {
+        toast.success(`${name} is Selected `)
         if (selectedPlayers.length >= 6) {
-            alert("You can Choose only Six Players")
+            toast("You can Choose only Six Players")
             return
         }
         if (price > coin) {
-            alert("you don't have enough coin");
+            toast("You don't have enough coin");
             return
         }
         handleCoin(price)

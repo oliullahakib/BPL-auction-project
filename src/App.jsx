@@ -4,6 +4,7 @@ import AvailablePlayers from './components/AvailablePlayers/AvailablePlayers'
 import Banner from './components/Banner/Banner'
 import Navbar from './components/Navbar/Navbar'
 import SelectedPlayers from './components/SelectedPlayers/SelectedPlayers'
+import { toast, ToastContainer } from 'react-toastify';
 
 const playersPromiss = fetch('/public/players.json').then(res => res.json())
 
@@ -20,12 +21,13 @@ function App() {
     }
     setSelectedPlayers([...selectedPlayers, player])
   }
-  const handleDelete = (id,name,price) => {
+  const handleDelete = (id, name, price) => {
     const decetion = confirm(`Do You Want To UnSelect ${name}`)
     if (decetion) {
       const filtaredPlayers = selectedPlayers.filter(player => player.id !== id)
       setSelectedPlayers(filtaredPlayers)
-      setCoin(coin+price)
+      setCoin(coin + price)
+      toast.error(`${name} is Discharge`)
     }
   }
 
@@ -54,6 +56,8 @@ function App() {
             handleDelete={handleDelete}
           />
       }
+      <ToastContainer position="top-center" />
+
     </>
   )
 }
