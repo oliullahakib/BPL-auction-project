@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
 import userImg from "../../assets/user1.png"
 import flagImg from "../../assets/report1.png"
 
 const AvailablePlayersCard = ({ player, handleCoin, coin, handleSelectedPlayers, selectedPlayers }) => {
     const { image, name, country, role, rating, bowling, batting, price } = player;
-    const [choosePlayer, setChoosePlayer] = useState(false)
+    const isSelected = selectedPlayers.some(p => p.id === player.id);
     const handleChoosePlayer = () => {
         if (selectedPlayers.length >= 6) {
             alert("You can Choose only Six Players")
@@ -14,9 +13,9 @@ const AvailablePlayersCard = ({ player, handleCoin, coin, handleSelectedPlayers,
             alert("you don't have enough coin");
             return
         }
-        setChoosePlayer(true)
         handleCoin(price)
         handleSelectedPlayers(player)
+
     }
     return (
         <div className="card bg-white text-black shadow-sm p-3 space-y-3">
@@ -49,7 +48,7 @@ const AvailablePlayersCard = ({ player, handleCoin, coin, handleSelectedPlayers,
                     <div className='flex gap-1 items-center'>
                         <p className='font-semibold'>Price: ${price}</p>
                     </div>
-                    <button disabled={choosePlayer} onClick={handleChoosePlayer} className={`btn ${choosePlayer ? 'text-green-400' : ""}`}>{choosePlayer ? "Selected" : "Choose Player"}</button>
+                    <button disabled={isSelected} onClick={handleChoosePlayer} className={`btn ${isSelected ? 'text-green-400' : ""}`}>{isSelected ? "Selected" : "Choose Player"}</button>
                 </div>
             </div>
         </div>

@@ -28,6 +28,7 @@ function App() {
       setCoin(coin+price)
     }
   }
+
   return (
     <>
       <Navbar coin={coin} />

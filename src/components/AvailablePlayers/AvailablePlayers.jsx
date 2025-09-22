@@ -13,7 +13,7 @@ const AvailablePlayers = ({ playersPromiss,handleCoin,coin,choosePlayer,handleSe
                         coin ={coin}
                         choosePlayer ={choosePlayer} 
                         handleSelectedPlayers={handleSelectedPlayers} 
-                        selectedPlayers={selectedPlayers}
+                        selectedPlayers ={selectedPlayers}
                         />)
                 }
             </div>
